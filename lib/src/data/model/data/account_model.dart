@@ -1,3 +1,5 @@
+import '../../../core/enum/enum.dart';
+
 class AccountModel {
   final String id;
   final String name;
@@ -27,9 +29,7 @@ class AccountModel {
   bool get isVendor => type == AccountType.vendor;
 }
 
-enum AccountType { customer, vendor }
 
-enum AccountStatus { active, settled, inactive }
 
 class AccountDummyData {
   static const List<AccountModel> accounts = [

@@ -1,4 +1,5 @@
 import 'package:get/state_manager.dart';
+import '../../core/enum/enum.dart';
 import '../../data/model/data/account_model.dart';
 
 

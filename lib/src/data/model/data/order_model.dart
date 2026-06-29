@@ -1,6 +1,8 @@
 // ─── Order Models & Dummy Data ────────────────────────────────────────────────
 
-enum OrderStatus { pending, processing, completed, cancelled }
+
+
+import '../../../core/enum/enum.dart';
 
 class OrderItem {
   final String productId;

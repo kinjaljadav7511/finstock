@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import '../../core/enum/enum.dart';
 import '../../data/model/data/stock_model.dart';
 import 'stock_controller.dart';
 

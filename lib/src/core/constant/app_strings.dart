@@ -26,6 +26,7 @@ class AppStrings {
 
   // Recent Activity
   static const String recentActivities = 'Recent Activities';
+  static const String viewAll = 'View All';
 
   // Greeting (Dynamic)
   static const String welcomeMessage = 'Welcome back, Arjun';

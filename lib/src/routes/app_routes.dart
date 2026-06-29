@@ -1,9 +1,14 @@
+import 'package:finstock/src/features/accounts/account_bindigs.dart';
 import 'package:finstock/src/features/accounts/account_page.dart';
 import 'package:finstock/src/features/app_scaffold/app_scaffold_bindigs.dart';
 import 'package:finstock/src/features/app_scaffold/app_scaffold_page.dart';
+import 'package:finstock/src/features/dashboard/dashboard_bindigs.dart';
 import 'package:finstock/src/features/dashboard/dashboard_page.dart';
+import 'package:finstock/src/features/orders/orders_bindigs.dart';
 import 'package:finstock/src/features/orders/orders_page.dart';
+import 'package:finstock/src/features/profile/profile_bindigs.dart';
 import 'package:finstock/src/features/profile/profile_page.dart';
+import 'package:finstock/src/features/stock/stock_bindigs.dart';
 import 'package:finstock/src/features/stock/stock_page.dart';
 import 'package:get/route_manager.dart';
 
@@ -20,13 +25,33 @@ class AppRoutes {
       name: scaffoldPage,
       page: () => AppScaffoldPage(),
       binding: AppScaffoldBindigs(),
-      
+
       children: [
-        GetPage(name: '/dashboard', page: () => DashboardPage()),
-        GetPage(name: '/orders', page: () => OrdersPage()),
-        GetPage(name: '/stock', page: () => StockPage()),
-        GetPage(name: '/accounts', page: () => AccountPage()),
-        GetPage(name: '/profile', page: () => ProfilePage()),
+        GetPage(
+          name: '/dashboard',
+          page: () => DashboardPage(),
+          binding: DashboardBindigs(),
+        ),
+        GetPage(
+          name: '/orders',
+          page: () => OrdersPage(),
+          binding: OrdersBindigs(),
+        ),
+        GetPage(
+          name: '/stock',
+          page: () => StockPage(),
+          binding: StockBindigs(),
+        ),
+        GetPage(
+          name: '/accounts',
+          page: () => AccountPage(),
+          binding: AccountBindigs(),
+        ),
+        GetPage(
+          name: '/profile',
+          page: () => ProfilePage(),
+          binding: ProfileBindigs(),
+        ),
       ],
     ),
   ];

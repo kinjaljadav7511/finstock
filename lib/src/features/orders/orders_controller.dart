@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import '../../core/enum/enum.dart';
 import '../../data/model/data/account_model.dart';
 import '../../data/model/data/order_model.dart';
 import '../../data/model/data/stock_model.dart';

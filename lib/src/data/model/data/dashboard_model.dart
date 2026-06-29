@@ -1,6 +1,8 @@
 // ─── Dashboard Models & Dummy Data ───────────────────────────────────────────
 
-enum ActivityType { order, payment, completed, stockAlert }
+
+
+import '../../../core/enum/enum.dart';
 
 class RecentActivity {
   final String id;

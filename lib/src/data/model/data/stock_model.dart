@@ -1,6 +1,5 @@
 // ─── Stock Models & Dummy Data ────────────────────────────────────────────────
-
-enum StockCategory { all, stationery, officeSupplies, electronics }
+import '../../../core/enum/enum.dart';
 
 class StockProduct {
   final String id;
