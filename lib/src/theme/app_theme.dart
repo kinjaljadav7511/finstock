@@ -25,16 +25,16 @@ class AppTheme {
         shadow: AppShadows.shadowColorMedium,
       ),
 
-      scaffoldBackgroundColor: AppColors.background,
-
+      scaffoldBackgroundColor: AppColors.surface,
+      //AppColors.background
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.surface,
         foregroundColor: AppColors.textPrimary,
         elevation: 0,
         centerTitle: false,
-        titleSpacing: AppSpacing.lg,
+        titleSpacing: AppSpacing.spacing16,
         toolbarHeight: AppSpacing.appBarHeight,
-        titleTextStyle: AppTextStyle.h2,
+        titleTextStyle: AppTextStyle.h2(),
         iconTheme: IconThemeData(
           color: AppColors.textPrimary,
           size: AppSpacing.iconSizeLarge,
@@ -64,7 +64,7 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: AppBorders.borderRadiusMD,
           ),
-          textStyle: AppTextStyle.buttonLarge,
+          textStyle: AppTextStyle.buttonLarge(),
         ),
       ),
 
@@ -72,7 +72,7 @@ class AppTheme {
         style: TextButton.styleFrom(
           foregroundColor: AppColors.primary,
           padding: AppSpacing.buttonPadding,
-          textStyle: AppTextStyle.buttonMedium,
+          textStyle: AppTextStyle.buttonMedium(),
           shape: RoundedRectangleBorder(
             borderRadius: AppBorders.borderRadiusMD,
           ),
@@ -88,7 +88,7 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: AppBorders.borderRadiusMD,
           ),
-          textStyle: AppTextStyle.buttonLarge,
+          textStyle: AppTextStyle.buttonLarge(),
         ),
       ),
 
@@ -130,38 +130,29 @@ class AppTheme {
           borderSide: const BorderSide(color: AppColors.error, width: 2),
         ),
         contentPadding: AppSpacing.inputPadding,
-        hintStyle: AppTextStyle.inputHint,
-        labelStyle: AppTextStyle.labelMedium,
-        floatingLabelStyle: AppTextStyle.labelSmall.copyWith(
-          color: AppColors.primary,
-        ),
-      ),
-
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        backgroundColor: AppColors.surface,
-        selectedItemColor: AppColors.primary,
-        unselectedItemColor: AppColors.textSecondary,
-        selectedLabelStyle: AppTextStyle.navLabelActive,
-        unselectedLabelStyle: AppTextStyle.navLabel,
-        type: BottomNavigationBarType.fixed,
-        elevation: 0,
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
+        hintStyle: AppTextStyle.inputHint(),
+        labelStyle: AppTextStyle.labelMedium(),
+        floatingLabelStyle: AppTextStyle.labelSmall(color: AppColors.primary),
       ),
 
       navigationBarTheme: NavigationBarThemeData(
+        indicatorColor: Colors.transparent,
         backgroundColor: AppColors.white,
         height: AppSpacing.bottomNavHeight,
-        labelTextStyle: WidgetStateProperty.resolveWith<TextStyle>(
-          (Set<WidgetState> states) => states.contains(WidgetState.selected)
-              ? TextStyle(color: AppColors.primary)
-              : TextStyle(color: AppColors.gray800),
-        ),
-        iconTheme: WidgetStateProperty.resolveWith<IconThemeData>(
-          (Set<WidgetState> states) => states.contains(WidgetState.selected)
-              ? IconThemeData(color: AppColors.primary)
-              : IconThemeData(color: AppColors.gray800),
-        ),
+        labelTextStyle: WidgetStateProperty.resolveWith<TextStyle>((states) {
+          return AppTextStyle.labelSmall(
+            color: states.contains(WidgetState.selected)
+                ? AppColors.primary
+                : AppColors.gray800,
+          );
+        }),
+        iconTheme: WidgetStateProperty.resolveWith<IconThemeData>((states) {
+          return IconThemeData(
+            color: states.contains(WidgetState.selected)
+                ? AppColors.primary
+                : AppColors.gray800,
+          );
+        }),
         overlayColor: WidgetStateProperty.all(Colors.transparent),
       ),
 
@@ -170,7 +161,7 @@ class AppTheme {
         selectedColor: AppColors.primary,
         disabledColor: AppColors.gray100,
         padding: AppSpacing.chipPadding,
-        labelStyle: AppTextStyle.buttonSmall,
+        labelStyle: AppTextStyle.buttonSmall(),
         side: const BorderSide(color: Colors.transparent),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppBorders.radiusFull),
@@ -180,8 +171,8 @@ class AppTheme {
       dialogTheme: DialogThemeData(
         backgroundColor: AppColors.surface,
         shape: RoundedRectangleBorder(borderRadius: AppBorders.borderRadiusXL),
-        titleTextStyle: AppTextStyle.h3,
-        contentTextStyle: AppTextStyle.bodyMedium,
+        titleTextStyle: AppTextStyle.h3(),
+        contentTextStyle: AppTextStyle.bodyMedium(),
       ),
 
       bottomSheetTheme: BottomSheetThemeData(
@@ -201,8 +192,8 @@ class AppTheme {
 
       listTileTheme: ListTileThemeData(
         contentPadding: AppSpacing.listItemPadding,
-        titleTextStyle: AppTextStyle.bodyLargeMedium,
-        subtitleTextStyle: AppTextStyle.bodySmall,
+        titleTextStyle: AppTextStyle.bodyLargeMedium(),
+        subtitleTextStyle: AppTextStyle.bodySmall(),
         iconColor: AppColors.textSecondary,
         shape: RoundedRectangleBorder(borderRadius: AppBorders.borderRadiusMD),
       ),
@@ -248,9 +239,7 @@ class AppTheme {
       // ===== SNACKBAR =====
       snackBarTheme: SnackBarThemeData(
         backgroundColor: AppColors.gray900,
-        contentTextStyle: AppTextStyle.bodyMedium.copyWith(
-          color: AppColors.white,
-        ),
+        contentTextStyle: AppTextStyle.bodyMedium(color: AppColors.white),
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: AppBorders.borderRadiusMD),
       ),
@@ -282,7 +271,6 @@ class AppTheme {
   // ==================== DARK THEME (OPTIONAL) ====================
   // Uncomment and customize if you need dark mode support
 
-  /*
   static ThemeData get darkTheme {
     return ThemeData(
       useMaterial3: true,
@@ -298,7 +286,6 @@ class AppTheme {
       // ... Add dark theme configurations
     );
   }
-  */
 }
 
 // ==================== THEME EXTENSIONS ====================

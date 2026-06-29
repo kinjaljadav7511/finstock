@@ -15,6 +15,7 @@ class AppStrings {
   static const String pendingPayments = 'Pending Payments';
   static const String lowStockItems = 'Low Stock Items';
   static const String totalOrders = 'Total Orders';
+  static const String needRestock = 'Need Restock';
 
   // Quick Actions
   static const String quickActions = 'Quick Actions';
@@ -27,32 +28,32 @@ class AppStrings {
   static const String recentActivities = 'Recent Activities';
 
   // Greeting (Dynamic)
-  static const String welcomeMessage = 'Welcome back,';
+  static const String welcomeMessage = 'Welcome back, Arjun';
 
   // Orders
-static const String createOrder = 'Create Order';
-static const String selectCustomer = 'Select Customer';
-static const String chooseCustomer = 'Choose a customer';
+  static const String createOrder = 'Create Order';
+  static const String selectCustomer = 'Select Customer';
+  static const String chooseCustomer = 'Choose a customer';
 
-/// Order Items
-static const String orderItems = 'Order Items';
-static const String noItemsAdded = 'No items added';
-static const String addYourFirstProduct = 'Add your first product';
+  /// Order Items
+  static const String orderItems = 'Order Items';
+  static const String noItemsAdded = 'No items added';
+  static const String addYourFirstProduct = 'Add your first product';
 
-/// Pricing
-static const String discount = 'Discount (%)';
-static const String tax = 'Tax (%)';
-static const String subtotal = 'Subtotal';
-static const String total = 'Total';
+  /// Pricing
+  static const String discount = 'Discount (%)';
+  static const String tax = 'Tax (%)';
+  static const String subtotal = 'Subtotal';
+  static const String total = 'Total';
 
-/// Invoices
-static const String invoices = 'Invoices';
-static const String all = 'All';
-static const String unpaid = 'Unpaid';
-static const String paid = 'Paid';
-static const String overdue = 'Overdue';
-static const String searchInvoices = 'Search invoices...';
+  /// Invoices
+  static const String invoices = 'Invoices';
+  static const String all = 'All';
+  static const String unpaid = 'Unpaid';
+  static const String paid = 'Paid';
+  static const String overdue = 'Overdue';
+  static const String searchInvoices = 'Search invoices...';
 
-/// Stock
-static const String stockManagement = 'Stock Management';
+  /// Stock
+  static const String stockManagement = 'Stock Management';
 }

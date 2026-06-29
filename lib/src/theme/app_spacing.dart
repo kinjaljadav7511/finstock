@@ -4,113 +4,110 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppSpacing {
   AppSpacing._();
 
-  
   // Space
-  static double get xs => 4.w;
-  static double get sm => 8.w;
-  static double get md => 12.w;
-  static double get lg => 16.w;
-  static double get xl => 20.w;
-  static double get xxl => 24.w;
-  static double get xxxl => 32.w;
-  static double get xxxxl => 40.w;
-  static double get xxxxxl => 48.w;
+  static double get spacing4 => 4.w; //xs
+  static double get spacing8 => 8.w; //sm
+  static double get spacing12 => 12.w; //md
+  static double get spacing16 => 16.w; //lg
+  static double get spacing20 => 20.w; //xl
+  static double get spacing24 => 24.w; //xxl
+  static double get spacing32 => 32.w; //xxxl
+  static double get spacing40 => 40.w; //xxxxl
+  static double get spacing48 => 48.w; //xxxxxl
 
+  static double get screenPadding => 16.0.w;
+  static double get cardPadding => 16.0.w;
+  static double get sectionSpacing => 24.0.w;
+  static double get bottomNavHeight => 64.0.h;
+  static double get appBarHeight => 56.0.h;
+  static double get fabSize => 56.0.sp;
 
-  static  double get screenPadding => 16.0.w;
-  static  double get cardPadding => 16.0.w;
-  static  double get sectionSpacing => 24.0.w;
-  static  double get bottomNavHeight => 64.0.h;
-  static  double get appBarHeight => 56.0.h;
-  static  double get fabSize => 56.0.sp;
-  
-  static  double get iconSizeSmall => 16.0.sp;
-  static  double get iconSizeMedium => 20.0.sp;
-  static  double get iconSizeLarge => 24.0.sp;
-  static  double get iconSizeExtraLarge => 32.0.sp;
+  static double get iconSizeSmall => 16.0.sp;
+  static double get iconSizeMedium => 20.0.sp;
+  static double get iconSizeLarge => 24.0.sp;
+  static double get iconSizeExtraLarge => 32.0.sp;
 
-  static  double get iconContainerSize => 40.0.h;
-  static  double get iconContainerLarge => 56.0.h;
+  static double get iconContainerSize => 40.0.h;
+  static double get iconContainerLarge => 56.0.h;
 
-  static  double get listItemHeight => 72.0.h;
-  static  double get inputHeight => 48.0.h;
-  static  double get buttonHeight => 48.0.h;
-  static  double get chipHeight => 32.0.h;
-  static  double get maxContentWidth => 480.0.w;
+  static double get listItemHeight => 72.0.h;
+  static double get inputHeight => 48.0.h;
+  static double get buttonHeight => 48.0.h;
+  static double get chipHeight => 32.0.h;
+  static double get maxContentWidth => 480.0.w;
 
+  static EdgeInsets padding4 = EdgeInsets.all(spacing4);
+  static EdgeInsets padding8 = EdgeInsets.all(spacing8);
+  static EdgeInsets padding12 = EdgeInsets.all(spacing12);
+  static EdgeInsets padding16 = EdgeInsets.all(spacing16);
+  static EdgeInsets padding20 = EdgeInsets.all(spacing20);
+  static EdgeInsets padding24 = EdgeInsets.all(spacing24);
+  static EdgeInsets padding32 = EdgeInsets.all(spacing32);
 
-  static  EdgeInsets paddingXS = EdgeInsets.all(xs);
-  static  EdgeInsets paddingSM = EdgeInsets.all(sm);
-  static  EdgeInsets paddingMD = EdgeInsets.all(md);
-  static  EdgeInsets paddingLG = EdgeInsets.all(lg);
-  static  EdgeInsets paddingXL = EdgeInsets.all(xl);
-  static  EdgeInsets paddingXXL = EdgeInsets.all(xxl);
-  static  EdgeInsets paddingXXXL = EdgeInsets.all(xxxl);
+  static EdgeInsets horizontal4 = EdgeInsets.symmetric(horizontal: spacing4);
+  static EdgeInsets horizontal8 = EdgeInsets.symmetric(horizontal: spacing8);
+  static EdgeInsets horizontal12 = EdgeInsets.symmetric(horizontal: spacing12);
+  static EdgeInsets horizontal16 = EdgeInsets.symmetric(horizontal: spacing16);
+  static EdgeInsets horizontal20 = EdgeInsets.symmetric(horizontal: spacing20);
+  static EdgeInsets horizontal24 = EdgeInsets.symmetric(horizontal: spacing24);
 
-  static  EdgeInsets horizontalXS = EdgeInsets.symmetric(horizontal: xs);
-  static  EdgeInsets horizontalSM = EdgeInsets.symmetric(horizontal: sm);
-  static  EdgeInsets horizontalMD = EdgeInsets.symmetric(horizontal: md);
-  static  EdgeInsets horizontalLG = EdgeInsets.symmetric(horizontal: lg);
-  static  EdgeInsets horizontalXL = EdgeInsets.symmetric(horizontal: xl);
-  static  EdgeInsets horizontalXXL = EdgeInsets.symmetric(horizontal: xxl);
+  static EdgeInsets vertical4 = EdgeInsets.symmetric(vertical: spacing4);
+  static EdgeInsets vertical8 = EdgeInsets.symmetric(vertical: spacing8);
+  static EdgeInsets vertical12 = EdgeInsets.symmetric(vertical: spacing12);
+  static EdgeInsets vertical16 = EdgeInsets.symmetric(vertical: spacing16);
+  static EdgeInsets vertical20 = EdgeInsets.symmetric(vertical: spacing20);
+  static EdgeInsets vertical24 = EdgeInsets.symmetric(vertical: spacing24);
 
-  static  EdgeInsets verticalXS = EdgeInsets.symmetric(vertical: xs);
-  static  EdgeInsets verticalSM = EdgeInsets.symmetric(vertical: sm);
-  static  EdgeInsets verticalMD = EdgeInsets.symmetric(vertical: md);
-  static  EdgeInsets verticalLG = EdgeInsets.symmetric(vertical: lg);
-  static  EdgeInsets verticalXL = EdgeInsets.symmetric(vertical: xl);
-  static  EdgeInsets verticalXXL = EdgeInsets.symmetric(vertical: xxl);
-
-  static  EdgeInsets screenEdgePadding = EdgeInsets.symmetric(
+  static EdgeInsets screenEdgePadding = EdgeInsets.symmetric(
     horizontal: screenPadding,
-    vertical: lg,
+    vertical: spacing16,
   );
-  static  EdgeInsets screenEdgePaddingH = EdgeInsets.symmetric(
+  static EdgeInsets screenEdgePaddingH = EdgeInsets.symmetric(
     horizontal: screenPadding,
   );
-  static  EdgeInsets cardContentPadding = EdgeInsets.all(cardPadding);
-  static  EdgeInsets listItemPadding = EdgeInsets.symmetric(
-    horizontal: lg,
-    vertical: md,
+  static EdgeInsets cardContentPadding = EdgeInsets.all(cardPadding);
+  static EdgeInsets listItemPadding = EdgeInsets.symmetric(
+    horizontal: spacing16,
+    vertical: spacing12,
   );
-  static  EdgeInsets buttonPadding = EdgeInsets.symmetric(
-    horizontal: lg,
-    vertical: md,
+  static EdgeInsets buttonPadding = EdgeInsets.symmetric(
+    horizontal: spacing16,
+    vertical: spacing12,
   );
-  static  EdgeInsets chipPadding = EdgeInsets.symmetric(
-    horizontal: md,
+  static EdgeInsets chipPadding = EdgeInsets.symmetric(
+    horizontal: spacing12,
     vertical: 6.0,
   );
-  static  EdgeInsets inputPadding = EdgeInsets.symmetric(
-    horizontal: lg,
-    vertical: md,
+  static EdgeInsets inputPadding = EdgeInsets.symmetric(
+    horizontal: spacing16,
+    vertical: spacing12,
   );
 
-  static  EdgeInsets dialogPadding = EdgeInsets.all(xxl);
-  static  EdgeInsets appBarPadding = EdgeInsets.symmetric(
-    horizontal: lg,
-    vertical: lg,
+  static EdgeInsets dialogPadding = EdgeInsets.all(spacing24);
+  static EdgeInsets appBarPadding = EdgeInsets.symmetric(
+    horizontal: spacing16,
+    vertical: spacing16,
   );
 
-  static  double get gapXS => xs;
-  static  double get gapSM => sm;
-  static  double get gapMD => md;
-  static  double get gapLG => lg;
-  static  double get gapXL => xl;
-  static  double get gapXXL => xxl;
-  static  double get gapXXXL => xxxl;
+  static double get gapXS => spacing4;
+  static double get gapSM => spacing8;
+  static double get gapMD => spacing12;
+  static double get gapLG => spacing16;
+  static double get gapXL => spacing20;
+  static double get gapXXL => spacing24;
+  static double get gapXXXL => spacing32;
 
-  static  SizedBox  vGapXS = SizedBox(height: xs);
-  static  SizedBox  vGapSM = SizedBox(height: sm);
-  static  SizedBox  vGapMD = SizedBox(height: md);
-  static  SizedBox  vGapLG = SizedBox(height: lg);
-  static  SizedBox  vGapXL = SizedBox(height: xl);
-  static  SizedBox  vGapXXL = SizedBox(height: xxl);
-  static  SizedBox  vGapXXXL = SizedBox(height: xxxl);
-  static  SizedBox  hGapXS = SizedBox(width: xs);
-  static  SizedBox  hGapSM = SizedBox(width: sm);
-  static  SizedBox  hGapMD = SizedBox(width: md);
-  static  SizedBox  hGapLG = SizedBox(width: lg);
-  static  SizedBox  hGapXL = SizedBox(width: xl);
-  static  SizedBox  hGapXXL = SizedBox(width: xxl);
+  static SizedBox vGap4 = SizedBox(height: spacing4);
+  static SizedBox vGap8 = SizedBox(height: spacing8);
+  static SizedBox vGap12 = SizedBox(height: spacing12);
+  static SizedBox vGap16 = SizedBox(height: spacing16);
+  static SizedBox vGap20 = SizedBox(height: spacing20);
+  static SizedBox vGap24 = SizedBox(height: spacing24);
+  static SizedBox vGap32 = SizedBox(height: spacing32);
+  static SizedBox hGap4 = SizedBox(width: spacing4);
+  static SizedBox hGap8 = SizedBox(width: spacing8);
+  static SizedBox hGap12 = SizedBox(width: spacing12);
+  static SizedBox hGap16 = SizedBox(width: spacing16);
+  static SizedBox hGap20 = SizedBox(width: spacing20);
+  static SizedBox hGap24 = SizedBox(width: spacing24);
 }

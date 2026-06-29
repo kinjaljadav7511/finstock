@@ -4,6 +4,6 @@ import 'package:get/get.dart';
 class OrdersBindigs extends Bindings {
   @override
   void dependencies() {
-    Get.put(OrdersController());
+    Get.put(OrderController());
   }
 }
