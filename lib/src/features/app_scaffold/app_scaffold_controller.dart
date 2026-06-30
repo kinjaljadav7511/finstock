@@ -1,4 +1,5 @@
 import 'package:finstock/src/routes/app_routes.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import '../../core/constant/app_strings.dart';
 
@@ -24,6 +25,7 @@ class AppScaffoldController extends GetxController {
   void onSelectedIndex(int tabIndex) {
     if (tabIndex < 0 || tabIndex >= routes.length) return;
     currentIndex.value = tabIndex;
+    debugPrint('Navigating to: ${routes[tabIndex]}');
     Get.rootDelegate.toNamed(routes[tabIndex]);
   }
 }

@@ -37,7 +37,7 @@ class AppTheme {
         titleTextStyle: AppTextStyle.h2(),
         iconTheme: IconThemeData(
           color: AppColors.textPrimary,
-          size: AppSpacing.iconSizeLarge,
+          size: AppSpacing.iconSize24,
         ),
         systemOverlayStyle: SystemUiOverlayStyle.dark,
         shadowColor: AppShadows.shadowColorMedium,
@@ -103,7 +103,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppBorders.radiusFull),
         ),
-        iconSize: AppSpacing.iconSizeLarge,
+        iconSize: AppSpacing.iconSize24,
       ),
 
       inputDecorationTheme: InputDecorationTheme(
@@ -260,7 +260,7 @@ class AppTheme {
       // ===== ICON THEME =====
       iconTheme: IconThemeData(
         color: AppColors.textPrimary,
-        size: AppSpacing.iconSizeMedium,
+        size: AppSpacing.iconSize20,
       ),
 
       // ===== PLATFORM BRIGHTNESS =====

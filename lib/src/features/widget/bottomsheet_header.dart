@@ -30,7 +30,7 @@ class BottomSheetHeader extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.close),
               onPressed: onClose,
-              iconSize: AppSpacing.iconSizeLarge,
+              iconSize: AppSpacing.iconSize24,
             )
           else
             const SizedBox(width: 40),

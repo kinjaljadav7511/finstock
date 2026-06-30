@@ -11,7 +11,6 @@ import 'package:finstock/src/features/profile/profile_page.dart';
 import 'package:finstock/src/features/stock/stock_bindigs.dart';
 import 'package:finstock/src/features/stock/stock_page.dart';
 import 'package:get/route_manager.dart';
-
 class AppRoutes {
   static const String scaffoldPage = "/scaffold";
   static const String dashBoradPage = "/scaffold/dashboard";

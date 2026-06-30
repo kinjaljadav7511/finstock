@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import '../../core/enum/enum.dart';
-import '../../data/model/data/stock_model.dart';
+import '../../data/model/data/stock_product_model.dart';
 
 class StockController extends GetxController {
   final RxInt selectedCategory =

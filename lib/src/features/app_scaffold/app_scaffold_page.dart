@@ -12,11 +12,8 @@ class AppScaffoldPage extends GetView<AppScaffoldController> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Obx(
-        () => Scaffold(
-          // appBar: BaseAppBar(
-          //   title: controller.title[controller.currentIndex.value],
-          // )
+      child: Obx(() {
+        return Scaffold(
           bottomNavigationBar: NavigationBar(
             height: AppSpacing.bottomNavHeight,
             indicatorColor: Colors.transparent,
@@ -55,8 +52,8 @@ class AppScaffoldPage extends GetView<AppScaffoldController> {
               anchorRoute: AppRoutes.scaffoldPage,
             ),
           ),
-        ),
-      ),
+        );
+      }),
     );
   }
 }

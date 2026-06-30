@@ -1,33 +1,48 @@
- import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 import '../../../core/enum/enum.dart';
 import '../../../theme/theme_export.dart';
 
-Map<String, dynamic> activityConfig(ActivityType type) {
-    switch (type) {
-      case ActivityType.order:
-        return {
-          'icon': Icons.shopping_bag_outlined,
-          'color': AppColors.primary,
-          'bg': AppColors.indigoIconBg,
-        };
-      case ActivityType.payment:
-        return {
-          'icon': Icons.attach_money,
-          'color': AppColors.success,
-          'bg': AppColors.greenIconBg,
-        };
-      case ActivityType.completed:
-        return {
-          'icon': Icons.check_circle_outline,
-          'color': AppColors.info,
-          'bg': AppColors.blueIconBg,
-        };
-      case ActivityType.stockAlert:
-        return {
-          'icon': Icons.warning_amber_outlined,
-          'color': AppColors.warning,
-          'bg': AppColors.amberIconBg,
-        };
-    }
+class ActivityStatusUI {
+  final IconData icon;
+  final Color iconColor;
+  final Color bgColor;
+
+  const ActivityStatusUI({
+    required this.icon,
+    required this.iconColor,
+    required this.bgColor,
+  });
+}
+
+ActivityStatusUI activityStatus(ActivityType type) {
+  switch (type) {
+    case ActivityType.order:
+      return const ActivityStatusUI(
+        icon: Icons.shopping_bag_outlined,
+        iconColor: AppColors.primary,
+        bgColor: AppColors.indigoIconBg,
+      );
+
+    case ActivityType.payment:
+      return const ActivityStatusUI(
+        icon: Icons.attach_money,
+        iconColor: AppColors.success,
+        bgColor: AppColors.greenIconBg,
+      );
+
+    case ActivityType.completed:
+      return const ActivityStatusUI(
+        icon: Icons.check_circle_outline,
+        iconColor: AppColors.info,
+        bgColor: AppColors.blueIconBg,
+      );
+
+    case ActivityType.stockAlert:
+      return const ActivityStatusUI(
+        icon: Icons.warning_amber_outlined,
+        iconColor: AppColors.warning,
+        bgColor: AppColors.amberIconBg,
+      );
   }
+}

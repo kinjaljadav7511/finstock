@@ -22,10 +22,10 @@ class AppSpacing {
   static double get appBarHeight => 56.0.h;
   static double get fabSize => 56.0.sp;
 
-  static double get iconSizeSmall => 16.0.sp;
-  static double get iconSizeMedium => 20.0.sp;
-  static double get iconSizeLarge => 24.0.sp;
-  static double get iconSizeExtraLarge => 32.0.sp;
+  static double get iconSize16 => 16.0.sp;
+  static double get iconSize20 => 20.0.sp;
+  static double get iconSize24 => 24.0.sp;
+  static double get iconSize32 => 32.0.sp;
 
   static double get iconContainerSize => 40.0.h;
   static double get iconContainerLarge => 56.0.h;

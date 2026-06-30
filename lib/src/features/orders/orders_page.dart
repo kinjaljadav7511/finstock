@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../../core/enum/enum.dart';
 import '../../data/model/data/account_model.dart';
 import '../../data/model/data/order_model.dart';
-import '../../data/model/data/stock_model.dart';
+import '../../data/model/data/stock_product_model.dart';
 import 'orders_controller.dart';
 import 'package:finstock/src/theme/theme_export.dart';
 

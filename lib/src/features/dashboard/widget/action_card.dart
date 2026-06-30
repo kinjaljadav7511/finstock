@@ -1,7 +1,5 @@
-import 'package:finstock/src/features/widget/widgets.dart';
 import 'package:finstock/src/theme/theme_export.dart';
 import 'package:flutter/material.dart';
-
 import '../../widget/icon_container.dart';
 
 class ActionCard extends StatelessWidget {

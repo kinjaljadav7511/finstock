@@ -38,7 +38,7 @@ class PrimaryButton extends StatelessWidget {
           ? Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(icon, size: AppSpacing.iconSizeMedium),
+                Icon(icon, size: AppSpacing.iconSize20),
                 AppSpacing.hGap8,
                 Text(label),
               ],

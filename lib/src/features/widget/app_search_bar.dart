@@ -26,7 +26,7 @@ class SearchBar extends StatelessWidget {
         prefixIcon: Icon(
           Icons.search,
           color: AppColors.textDisabled,
-          size: AppSpacing.iconSizeMedium,
+          size: AppSpacing.iconSize20,
         ),
         filled: true,
         fillColor: AppColors.gray50,
